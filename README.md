@@ -8,87 +8,79 @@ Ce projet vise à analyser un ensemble de données Spotify contenant 30 000 chan
 
 Nous allons chercher à répondre aux questions suivantes :
 
-Quelle est la qualité des données ? Un pré-traitement est-il nécessaire ?
+    - Quelle est la qualité des données ? Un pré-traitement est-il nécessaire ?
 
-Comment les différentes variables évoluent-elles en fonction des années et des genres musicaux ?
+    - Comment les différentes variables évoluent-elles en fonction des années et des genres musicaux ?
 
-Quels liens existent entre les variables du dataset ?
+    - Quels liens existent entre les variables du dataset ?
 
-Quels facteurs influencent la popularité d'un morceau ?
+    - Quels facteurs influencent la popularité d'un morceau ?
 
-Les caractéristiques musicales permettent-elles de prédire un genre musical ou d'autres critères pertinents ?
+    - Les caractéristiques musicales permettent-elles de prédire un genre musical ou d'autres critères pertinents ?
 
 # Données
 
-Source : Kaggle - 30000 Spotify Songs
+**Source :** Kaggle - 30000 Spotify Songs
 
-Nombre d'entrées : 30 000 chansons
+**Nombre d'entrées :** 30 000 chansons
 
-Variables principales :
+Les principales variables du dataset sont :
 
-track_id : ID unique de la chanson
+**ID et métadonnées :** track_id, track_name, track_artist, track_album_id, track_album_name, track_album_release_date
 
-track_name : Nom de la chanson
+**Popularité et classification :** track_popularity, playlist_name, playlist_id, playlist_genre, playlist_subgenre
 
-track_artist : Artiste
+**Caractéristiques audio :**
 
-track_popularity : Score de popularité (0-100)
+    - danceability, energy, tempo (énergie et rythme de la musique)
 
-playlist_genre et playlist_subgenre : Genre et sous-genre de la playlist
+    - loudness, mode, key (intensité sonore et tonalité)
 
-danceability, energy, loudness, valence, tempo, duration_ms, etc. : Caractéristiques audio de la chanson
+    - speechiness, acousticness, instrumentalness (présence de paroles, instruments)
+
+    - liveness, valence (détection de live et émotions véhiculées)
+
+    - duration_ms (durée du morceau en millisecondes)
 
 # Méthodologie
 
 Nous appliquerons les techniques suivantes pour explorer et analyser les données :
 
-Pré-traitement des données : Nettoyage, gestion des valeurs manquantes, transformation des variables si nécessaire.
+**Pré-traitement des données** : Nettoyage, gestion des valeurs manquantes, transformation des variables si nécessaire.
 
-Analyse exploratoire : Visualisation des distributions et des relations entre les variables.
+**Analyse exploratoire :** Visualisation des distributions et des relations entre les variables.
 
-Analyse factorielle et réduction de dimension :
+**Analyse factorielle et réduction de dimension :**
 
-Analyse en Composantes Principales (PCA)
+    - Analyse en Composantes Principales (PCA)
 
-Analyse Discriminante Linéaire (LDA)
+    - Analyse Discriminante Linéaire (LDA)
 
-Analyse des Correspondances (CA) et Analyse des Correspondances Multiples (MCA)
+    - Analyse des Correspondances (CA) et Analyse des Correspondances Multiples (MCA)
 
-Analyse Factorielle Multiple (MFA)
+    - Analyse Factorielle Multiple (MFA)
 
 # Clustering :
 
-K-means
+    - K-means
 
-Clustering hiérarchique (HAC)
+    - Clustering hiérarchique (HAC)
 
-Modèles de mélanges gaussiens (GMM)
+    - Modèles de mélanges gaussiens (GMM)
 
-Modèle Stochastique de Blocs (SBM)
+    - Modèle Stochastique de Blocs (SBM)
 
-Clustering de graphes
+    - Clustering de graphes
 
 # Autres techniques avancées :
 
-Kernel PCA
+    - Kernel PCA
 
-Factorisation de Matrice Non Négative (NMF)
+    - Factorisation de Matrice Non Négative (NMF)
 
-Multidimensional Scaling (MDS)
+    - Multidimensional Scaling (MDS)
 
-Réduction de dimension non linéaire
-
-# Structure du projet
-
-Projet-Spotify/
-|-- data/                      # Fichiers de données bruts et pré-traités
-|-- notebooks/
-|   |-- Analyse_Exploratoire.ipynb
-|   |-- PCA_LDA.ipynb
-|   |-- Clustering.ipynb
-|   |-- Dimensionality_Reduction.ipynb
-|-- src/                       # Scripts Python et R
-|-- README.md                  # Documentation du projet
+    - Réduction de dimension non linéaire
 
 # Technologies utilisées
 
@@ -100,9 +92,7 @@ Jupyter Notebook / R Notebook pour l'analyse interactive
 
 # Auteurs
 
-Projet réalisé dans le cadre du cours d'Analyse de Données 4MA - AD 2024-2025.
-
-Pour toute question ou suggestion, n'hésitez pas à contribuer ou nous contacter !
+Projet réalisé dans le cadre du cours d'Analyse de Données 4MA - 2024-2025 à l'INSA Toulouse.
 
 
 
