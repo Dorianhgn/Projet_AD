@@ -1,7 +1,7 @@
 # Variables for customization
-$videoUrl = "https://www.youtube.com/watch?v=H4Y73nQ3sNk" # YouTube video URL
-$startTime = "65.1"  
-$endTime = "69.2"                                     # Start time for the audio clip (in seconds)
+$videoUrl = "https://www.youtube.com/watch?v=1vrEljMfXYo" # YouTube video URL
+$startTime = "29.5"  
+$endTime = "37.0"                                     # Start time for the audio clip (in seconds)
 $clipDuration = ([double]$endTime - [double]$startTime).ToString("F1") # Duration of the audio clip (in seconds)
 
 # --- Script ---
